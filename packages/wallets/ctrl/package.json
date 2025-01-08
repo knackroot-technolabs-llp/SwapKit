@@ -1,12 +1,12 @@
 {
   "description": "SwapKit Wallet - Ctrl",
   "dependencies": {
+    "@internal/helpers": "workspace:*",
+    "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-utxo": "workspace:*",
     "@keplr-wallet/types": "0.12.110",
-    "@swapkit/helpers": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@swapkit/toolbox-evm": "workspace:*",
-    "@swapkit/toolbox-solana": "workspace:*",
-    "@swapkit/toolbox-utxo": "workspace:*"
+    "@swapkit/toolbox-solana": "workspace:*"
   },
   "files": [
     "src/",
@@ -16,6 +16,7 @@
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "name": "@swapkit/wallet-ctrl",
+  "private":true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thorswap/SwapKit.git"

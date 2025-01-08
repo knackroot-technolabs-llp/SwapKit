@@ -2,9 +2,9 @@
   "dependencies": {
     "@cosmjs/amino": "0.32.4",
     "@cosmjs/proto-signing": "0.32.4",
-    "@swapkit/helpers": "workspace:*",
+    "@internal/helpers": "workspace:*",
+    "@internal/toolbox-evm": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
-    "@swapkit/toolbox-evm": "workspace:*",
     "@walletconnect/modal-sign-html": "2.6.2",
     "cosmjs-types": "0.9.0",
     "pino": "9.2.0",
@@ -23,6 +23,7 @@
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "name": "@swapkit/wallet-wc",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thorswap/SwapKit.git"
