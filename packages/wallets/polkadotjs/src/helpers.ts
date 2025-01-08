@@ -2,7 +2,7 @@ import { Chain, SwapKitError, WalletOption } from "@internal/helpers";
 
 import { decodeAddress, encodeAddress } from "@polkadot/util-crypto";
 
-import type { InjectedWindow, PolkadotToolbox } from "@swapkit/toolbox-substrate";
+import type { InjectedWindow, PolkadotToolbox } from "@internal/toolbox-substrate";
 
 export const convertAddress = (inputAddress: string, newPrefix: number): string => {
   const decodedAddress = decodeAddress(inputAddress);
@@ -22,7 +22,7 @@ export const getWalletForChain = async ({
 }> => {
   switch (chain) {
     case Chain.Polkadot: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-substrate");
+      const { getToolboxByChain } = await import("@internal/toolbox-substrate");
       const injectedWindow = window as Window & InjectedWindow;
       const injectedExtension = injectedWindow?.injectedWeb3?.["polkadot-js"];
 

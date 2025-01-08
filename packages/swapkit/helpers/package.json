@@ -11,7 +11,7 @@
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@swapkit/toolbox-radix": "workspace:*",
     "@swapkit/toolbox-solana": "workspace:*",
-    "@swapkit/toolbox-substrate": "workspace:*"
+    "@internal/toolbox-substrate": "workspace:*"
   },
   "files": [
     "src/",

@@ -1,4 +1,4 @@
-import { SwapKitApi } from "@swapkit/api";
+import { SwapKitApi } from "@thortradekit/api";
 import { Chain, ChainId, ProviderName } from "@internal/helpers";
 
 function parseChain(chain: string) {

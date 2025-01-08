@@ -18,7 +18,7 @@ export const useSwapKit = () => {
   useEffect(() => {
     const loadSwapKit = async () => {
       const { SwapKit } = await import("@swapkit/core");
-      const { ChainflipPlugin } = await import("@swapkit/plugin-chainflip");
+      const { ChainflipPlugin } = await import("@thortradekit/plugin-chainflip");
       const { KadoPlugin } = await import("@swapkit/plugin-kado");
       const { ThorchainPlugin, MayachainPlugin } = await import("@swapkit/plugin-thorchain");
       const { wallets } = await import("@swapkit/wallets");

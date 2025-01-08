@@ -1,22 +1,21 @@
 {
-  "author": "swapkit-oss",
+  "author": "thortradekit-oss",
   "dependencies": {
-    "@internal/helpers": "workspace:*",
+    "@swapkit/helpers": "2.2.1",
     "zod": "3.23.8"
   },
-  "description": "SwapKit - API",
+  "description": "ThorTradeKit - API",
   "files": [
     "src/",
     "dist/"
   ],
-  "homepage": "https://github.com/thorswap/SwapKit",
+  "homepage": "https://github.com/knackroot-technolabs-llp/SwapKit.git",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
-  "name": "@swapkit/api",
-  "private":true,
+  "name": "@thortradekit/api",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thorswap/SwapKit.git"
+    "url": "git+https://github.com/knackroot-technolabs-llp/SwapKit.git"
   },
   "scripts": {
     "build": "bun run ./build.ts",
@@ -28,5 +27,5 @@
   },
   "type": "module",
   "types": "./src/index.ts",
-  "version": "2.2.1"
+  "version": "0.0.1"
 }

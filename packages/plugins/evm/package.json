@@ -3,7 +3,7 @@
   "dependencies": {
     "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
-    "@swapkit/api": "workspace:*"
+    "@thortradekit/api": "workspace:*"
   },
   "description": "SwapKit Plugin - EVM",
   "files": [

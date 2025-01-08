@@ -14,7 +14,7 @@ import {
   type UTXOChain,
   getMemoForLoan,
 } from "@internal/helpers";
-import type { QuoteResponseRoute } from "@swapkit/api";
+import type { QuoteResponseRoute } from "@thortradekit/api";
 
 import { basePlugin } from "./basePlugin";
 import { prepareTxParams, validateAddressType } from "./shared";

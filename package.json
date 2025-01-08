@@ -25,7 +25,7 @@
     "build": "bun --filter '*' build",
     "clean": "bun --filter '*' clean && rm -rf node_modules; bun install",
     "deps": "bun ncu --root -u -i -ws",
-    "generate:tokens": "bun --filter '@swapkit/api' build; bun --cwd packages/swapkit/tokens generate-tokens; bun --filter '@swapkit/tokens' lint",
+    "generate:tokens": "bun --filter '@thortradekit/api' build; bun --cwd packages/swapkit/tokens generate-tokens; bun --filter '@swapkit/tokens' lint",
     "lint": "bun --filter '*' lint",
     "lint:ci": "bun lint && bun type-check",
     "lint:ws": "bun x sherif@latest",

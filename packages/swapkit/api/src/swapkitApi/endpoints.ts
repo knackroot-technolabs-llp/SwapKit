@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { ProviderName, RequestClient, SwapKitError } from "@internal/helpers";
+import { ProviderName, RequestClient, SwapKitError } from "@swapkit/helpers";
 
 import {
   type BrokerDepositChannelParams,
@@ -347,20 +347,17 @@ export async function getTokenTradingPairs(
 }
 
 export async function getChainflipDepositChannel({
-  isDev = false,
   body,
 }: {
-  isDev?: boolean;
   body: BrokerDepositChannelParams;
 }) {
-  const { destinationAddress } = body;
+  const { destinationAddress, brokerUrl: url } = body;
 
   if (!destinationAddress) {
     throw new SwapKitError("chainflip_broker_invalid_params");
   }
-  const url = `${getBaseUrl(isDev)}/channel`;
 
-  const response = await RequestClient.post<DepositChannelResponse>(url, {
+  const response = await RequestClient.post<DepositChannelResponse>(url!, {
     json: body,
   });
 

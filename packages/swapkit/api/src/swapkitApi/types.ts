@@ -337,6 +337,7 @@ export const BrokerDepositChannelParamsSchema = z.object({
     .optional(),
   brokerCommissionBps: z.number().optional(),
   maxBoostFeeBps: z.number().optional(),
+  brokerUrl: z.string().optional(),
 });
 
 export type BrokerDepositChannelParams = z.infer<typeof BrokerDepositChannelParamsSchema>;

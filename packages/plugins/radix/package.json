@@ -2,7 +2,7 @@
   "author": "swapkit-oss",
   "dependencies": {
     "@internal/helpers": "workspace:*",
-    "@swapkit/api": "workspace:*"
+    "@thortradekit/api": "workspace:*"
   },
   "description": "SwapKit Plugin - Radix",
   "files": [

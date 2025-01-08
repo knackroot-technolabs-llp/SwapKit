@@ -7,7 +7,7 @@
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@swapkit/toolbox-radix": "workspace:*",
     "@swapkit/toolbox-solana": "workspace:*",
-    "@swapkit/toolbox-substrate": "workspace:*",
+    "@internal/toolbox-substrate": "workspace:*",
     "blakejs": "1.2.1",
     "micro-key-producer": "0.7.1"
   },
