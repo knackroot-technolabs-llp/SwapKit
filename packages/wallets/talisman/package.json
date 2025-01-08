@@ -3,9 +3,9 @@
   "dependencies": {
     "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-substrate": "workspace:*",
     "@polkadot/util": "12.6.2",
-    "@polkadot/util-crypto": "12.6.2",
-    "@internal/toolbox-substrate": "workspace:*"
+    "@polkadot/util-crypto": "12.6.2"
   },
   "files": [
     "src/",
