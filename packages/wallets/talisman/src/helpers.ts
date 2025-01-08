@@ -17,8 +17,8 @@ import type {
   MATICToolbox,
   OPToolbox,
 } from "@internal/toolbox-evm";
+import type { InjectedWindow } from "@internal/toolbox-substrate";
 import { decodeAddress, encodeAddress } from "@polkadot/util-crypto";
-import type { InjectedWindow } from "@swapkit/toolbox-substrate";
 
 declare const window: {
   talismanEth: EthereumWindowProvider;
@@ -123,7 +123,7 @@ export const getWalletForChain = async ({
     }
 
     case Chain.Polkadot: {
-      const { getToolboxByChain } = await import("@swapkit/toolbox-substrate");
+      const { getToolboxByChain } = await import("@internal/toolbox-substrate");
 
       const injectedWindow = window as Window & InjectedWindow;
       const injectedExtension = injectedWindow?.injectedWeb3?.talisman;

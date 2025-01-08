@@ -1,15 +1,15 @@
 {
   "author": "swapkit-oss",
   "dependencies": {
-    "@swapkit/api": "workspace:*",
     "@swapkit/core": "workspace:*",
-    "@swapkit/plugin-chainflip": "workspace:*",
     "@swapkit/plugin-evm": "workspace:*",
     "@swapkit/plugin-kado": "workspace:*",
     "@swapkit/plugin-radix": "workspace:*",
     "@swapkit/plugin-thorchain": "workspace:*",
     "@swapkit/tokens": "workspace:*",
-    "@swapkit/wallets": "workspace:*"
+    "@swapkit/wallets": "workspace:*",
+    "@thortradekit/api": "workspace:*",
+    "@thortradekit/plugin-chainflip": "workspace:*"
   },
   "description": "SwapKit - SDK",
   "files": [

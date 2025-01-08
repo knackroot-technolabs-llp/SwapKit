@@ -7,8 +7,8 @@ import {
   SwapKitError,
   type SwapKitPluginParams,
   type UTXOWallets,
-} from "@internal/helpers";
-import { swapkitApiEndpoints } from "@swapkit/api";
+} from "@swapkit/helpers";
+import { swapkitApiEndpoints } from "@thortradekit/api";
 import type { RequestSwapDepositAddressParams } from "./types";
 
 type SupportedChain = keyof (EVMWallets & SubstrateWallets & UTXOWallets & SolanaWallets);
@@ -62,6 +62,7 @@ function plugin({
     const { depositAddress } = await swapkitApiEndpoints.getChainflipDepositChannel({
       body: {
         ...chainflip,
+        brokerUrl,
         destinationAddress: recipient || chainflip.destinationAddress,
         maxBoostFeeBps: maxBoostFeeBps || chainflip.maxBoostFeeBps,
       },
@@ -86,6 +87,6 @@ function plugin({
 export const ChainflipPlugin = { chainflip: { plugin } } as const;
 
 /**
- * @deprecated Use import { ChainflipPlugin } from "@swapkit/plugin-chainflip" instead
+ * @deprecated Use import { ChainflipPlugin } from "@thortradekit/plugin-chainflip" instead
  */
 export const ChainflipProvider = ChainflipPlugin;

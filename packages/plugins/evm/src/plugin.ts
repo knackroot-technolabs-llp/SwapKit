@@ -9,7 +9,7 @@ import {
   type SwapKitPluginParams,
   type SwapParams,
 } from "@internal/helpers";
-import type { EVMTransaction, QuoteResponseRoute } from "@swapkit/api";
+import type { EVMTransaction, QuoteResponseRoute } from "@thortradekit/api";
 
 type ApproveParams = {
   assetValue: AssetValue;

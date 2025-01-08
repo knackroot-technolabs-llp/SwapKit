@@ -11,7 +11,7 @@ import { EVMPlugin } from "@swapkit/plugin-evm";
 import { MayachainPlugin, ThorchainPlugin } from "@swapkit/plugin-thorchain";
 <%_ } _%>
 <%_ if (plugins.includes("chainflip")) { _%>
-import { ChainflipPlugin } from "@swapkit/plugin-chainflip";
+import { ChainflipPlugin } from "@thortradekit/plugin-chainflip";
 <%_ } _%>
 <%_ wallets.forEach(function(walletName) { _%>
 import { <%= walletName === 'wc' ? 'walletconnect' : walletName.split('-')[0] %>Wallet } from "@swapkit/wallet-<%= walletName %>";

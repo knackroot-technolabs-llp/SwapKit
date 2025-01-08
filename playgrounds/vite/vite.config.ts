@@ -31,7 +31,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@swapkit/api": resolve("../../packages/swapkit/api/src"),
+      "@thortradekit/api": resolve("../../packages/swapkit/api/src"),
       "@swapkit/core": resolve("../../packages/swapkit/core/src"),
       "@swapkit/contracts": resolve("../../packages/swapkit/contracts/src"),
       "@internal/helpers": resolve("../../packages/swapkit/helpers/src"),
@@ -39,7 +39,7 @@ export default defineConfig({
       "@swapkit/types": resolve("../../packages/swapkit/types/src"),
       "@swapkit/wallets": resolve("../../packages/swapkit/wallets/src"),
 
-      "@swapkit/plugin-chainflip": resolve("../../packages/plugins/chainflip/src"),
+      "@thortradekit/plugin-chainflip": resolve("../../packages/plugins/chainflip/src"),
       "@swapkit/plugin-evm": resolve("../../packages/plugins/evm/src"),
       "@swapkit/plugin-kado": resolve("../../packages/plugins/kado/src"),
       "@swapkit/plugin-radix": resolve("../../packages/plugins/radix/src"),
@@ -49,7 +49,7 @@ export default defineConfig({
       "@internal/toolbox-evm": resolve("../../packages/toolboxes/evm/src"),
       "@swapkit/toolbox-radix": resolve("../../packages/toolboxes/radix/src"),
       "@swapkit/toolbox-solana": resolve("../../packages/toolboxes/solana/src"),
-      "@swapkit/toolbox-substrate": resolve("../../packages/toolboxes/substrate/src"),
+      "@internal/toolbox-substrate": resolve("../../packages/toolboxes/substrate/src"),
       "@internal/toolbox-utxo": resolve("../../packages/toolboxes/utxo/src"),
 
       "@swapkit/wallet-bitget": resolve("../../packages/wallets/bitget/src"),

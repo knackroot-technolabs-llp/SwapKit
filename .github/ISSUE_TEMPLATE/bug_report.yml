@@ -57,7 +57,7 @@ body:
       options:
         - label: "@swapkit/sdk"
         - label: "@swapkit/core"
-        - label: "@swapkit/api"
+        - label: "@thortradekit/api"
         - label: "@internal/helpers"
         - label: "@swapkit/tokens"
 

@@ -3,13 +3,13 @@
   "dependencies": {
     "@internal/helpers": "workspace:*",
     "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-substrate": "workspace:*",
     "@internal/toolbox-utxo": "workspace:*",
-    "@swapkit/api": "workspace:*",
     "@swapkit/plugin-evm": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@swapkit/toolbox-radix": "workspace:*",
     "@swapkit/toolbox-solana": "workspace:*",
-    "@swapkit/toolbox-substrate": "workspace:*"
+    "@thortradekit/api": "workspace:*"
   },
   "description": "SwapKit - Core",
   "files": [

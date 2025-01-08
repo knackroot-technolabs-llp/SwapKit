@@ -7,11 +7,11 @@
   },
   "devDependencies": {
     "@internal/toolbox-evm": "workspace:*",
+    "@internal/toolbox-substrate": "workspace:*",
     "@internal/toolbox-utxo": "workspace:*",
     "@swapkit/toolbox-cosmos": "workspace:*",
     "@swapkit/toolbox-radix": "workspace:*",
-    "@swapkit/toolbox-solana": "workspace:*",
-    "@swapkit/toolbox-substrate": "workspace:*"
+    "@swapkit/toolbox-solana": "workspace:*"
   },
   "files": [
     "src/",

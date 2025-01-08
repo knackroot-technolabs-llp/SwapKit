@@ -20,7 +20,7 @@ import {
   getMinAmountByChain,
   wrapWithThrow,
 } from "@internal/helpers";
-import { SwapKitApi, type ThornodeEndpointParams } from "@swapkit/api";
+import { SwapKitApi, type ThornodeEndpointParams } from "@thortradekit/api";
 
 import type {
   AddLiquidityParams,

@@ -164,7 +164,7 @@ const getWalletMethodsForChain = async ({
     case Chain.Polkadot:
     case Chain.Chainflip: {
       const { Network, getToolboxByChain, createKeyring } = await import(
-        "@swapkit/toolbox-substrate"
+        "@internal/toolbox-substrate"
       );
 
       const signer = await createKeyring(phrase, Network[chain].prefix);

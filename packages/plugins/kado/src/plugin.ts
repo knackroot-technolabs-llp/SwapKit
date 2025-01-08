@@ -7,7 +7,7 @@ import {
   blockTimes,
 } from "@internal/helpers";
 import type { SwapKitPluginParams, SwapParams } from "@internal/helpers";
-import type { QuoteResponse, QuoteResponseRoute } from "@swapkit/api";
+import type { QuoteResponse, QuoteResponseRoute } from "@thortradekit/api";
 import { ChainToKadoChain } from "./helpers";
 import type {
   KadoBlockchainsResponse,

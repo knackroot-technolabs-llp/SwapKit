@@ -4,8 +4,8 @@ import type {
   QuoteRequest,
   QuoteResponseRoute,
   TrackerParams,
-} from "@swapkit/api";
-import { SwapKitApi } from "@swapkit/api";
+} from "@thortradekit/api";
+import { SwapKitApi } from "@thortradekit/api";
 
 import {
   ApproveMode,

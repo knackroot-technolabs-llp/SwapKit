@@ -12,7 +12,7 @@ import {
   type SwapParams,
   type UTXOChain,
 } from "@internal/helpers";
-import type { QuoteResponseRoute } from "@swapkit/api";
+import type { QuoteResponseRoute } from "@thortradekit/api";
 import { basePlugin } from "./basePlugin";
 import { prepareTxParams, validateAddressType } from "./shared";
 import type { AddLiquidityParams, CoreTxParams, CreateLiquidityParams } from "./types";
